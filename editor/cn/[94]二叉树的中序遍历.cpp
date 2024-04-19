@@ -54,8 +54,17 @@
  */
 class Solution {
 public:
+    void Traversal(TreeNode *node,std::vector<int> &result)
+    {
+        if(node==nullptr) return;
+        Traversal(node->left,result);
+        result.emplace_back(node->val);
+        Traversal(node->right,result);
+    }
     std::vector<int> inorderTraversal(TreeNode* root) {
-
+        std::vector<int> result;
+        Traversal(root,result);
+        return result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
