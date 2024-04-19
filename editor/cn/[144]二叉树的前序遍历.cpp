@@ -67,8 +67,17 @@
  */
 class Solution {
 public:
-    vector<int> preorderTraversal(TreeNode* root) {
-
+    void Traversal(TreeNode* node,std::vector<int> &result)
+    {
+        if(node==nullptr) return;
+        result.emplace_back(node->val);
+        Traversal(node->left,result);
+        Traversal(node->right,result);
+    }
+    std::vector<int> preorderTraversal(TreeNode* root) {
+        std::vector<int> result;
+        Traversal(root,result);
+        return result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
