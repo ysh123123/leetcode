@@ -39,6 +39,7 @@
 // Related Topics 栈 树 深度优先搜索 二叉树 👍 2067 👎 0
 
 
+#include <vector>
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
@@ -53,7 +54,7 @@
  */
 class Solution {
 public:
-    vector<int> inorderTraversal(TreeNode* root) {
+    std::vector<int> inorderTraversal(TreeNode* root) {
 
     }
 };
