@@ -38,7 +38,8 @@
 //
 // Related Topics 栈 树 深度优先搜索 二叉树 👍 1171 👎 0
 
-
+#include <algorithm>
+#include<vector>
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
@@ -62,7 +63,28 @@ public:
     }
     std::vector<int> postorderTraversal(TreeNode* root) {
         std::vector<int> result;
-        Traversal(root,result);
+        std::stack<TreeNode*> temp;
+        // Traversal(root,result);
+        temp.push(root);
+        while(!temp.empty())
+        {
+            auto cur = temp.top();
+            temp.pop();
+            if(cur !=nullptr)
+            {
+                result.push_back(cur->val);
+                // temp.pop();
+                temp.push(cur->left);
+                temp.push(cur->right);
+
+            }
+            // else
+            // {
+            //     // temp.pop();
+            //     // continue;
+            // }
+        }
+        std::reverse(result.begin(),result.end());
         return result;
     }
 };

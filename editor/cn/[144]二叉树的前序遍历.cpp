@@ -55,16 +55,18 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+ * Definition for a binary tree node.*/
+#include <stack>
+#include <vector>
+  /*struct TreeNode {
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode() : val(0), left(nullptr), right(nullptr) {}
+      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  };*/
+
 class Solution {
 public:
     void Traversal(TreeNode* node,std::vector<int> &result)
@@ -76,8 +78,28 @@ public:
     }
     std::vector<int> preorderTraversal(TreeNode* root) {
         std::vector<int> result;
-        Traversal(root,result);
+        std::stack<TreeNode*> temp;
+        // Traversal(root,result);
+        temp.push(root);
+        while(!temp.empty())
+        {
+            auto cur = temp.top();
+            temp.pop();
+            if(cur !=nullptr)
+            {
+                result.push_back(cur->val);
+                // temp.pop();
+                temp.push(cur->right);
+                temp.push(cur->left);
+            }
+            // else
+            // {
+            //     // temp.pop();
+            //     // continue;
+            // }
+        }
         return result;
     }
 };
+
 //leetcode submit region end(Prohibit modification and deletion)
