@@ -39,19 +39,20 @@
 // Related Topics 栈 树 深度优先搜索 二叉树 👍 2067 👎 0
 
 
+#include <stack>
 #include <vector>
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+ * Definition for a binary tree node.*/
+  // struct TreeNode {
+  //     int val;
+  //     TreeNode *left;
+  //     TreeNode *right;
+  //     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+  //     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+  //     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  // };
+
 class Solution {
 public:
     void Traversal(TreeNode *node,std::vector<int> &result)
@@ -63,7 +64,23 @@ public:
     }
     std::vector<int> inorderTraversal(TreeNode* root) {
         std::vector<int> result;
-        Traversal(root,result);
+        // Traversal(root,result);
+        std::stack<TreeNode*> temp;
+        auto cur = root;
+        while (cur!=nullptr||!temp.empty())
+        {
+            if(cur!=nullptr)
+            {
+                temp.push(cur);
+                cur = cur->left;
+            }else
+            {
+                cur = temp.top();
+                result.push_back(cur->val);
+                temp.pop();
+                cur = cur->right;
+            }
+        }
         return result;
     }
 };
