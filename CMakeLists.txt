@@ -8,4 +8,7 @@ add_executable(leecode
         editor/cn/[94]二叉树的中序遍历.cpp
         editor/cn/[102]二叉树的层序遍历.cpp
         "editor/cn/[107]二叉树的层序遍历 II.cpp"
+        editor/cn/[199]二叉树的右视图.cpp
+        editor/cn/[637]二叉树的层平均值.cpp
+        "editor/cn/[429]N 叉树的层序遍历.cpp"
 )
