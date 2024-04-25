@@ -25,6 +25,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/editor/cn/[116]填充每个节点的下一个右侧节点指针.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/editor/cn/doc/content/[116]填充每个节点的下一个右侧节点指针.md" />
+              <option name="frontendQuestionId" value="leetcode.cn116" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/editor/cn/[116]填充每个节点的下一个右侧节点指针.cpp" />
+              <option name="titleSlug" value="populating-next-right-pointers-in-each-node" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/editor/cn/[117]填充每个节点的下一个右侧节点指针 II.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/editor/cn/doc/content/[117]填充每个节点的下一个右侧节点指针 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn117" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/editor/cn/[117]填充每个节点的下一个右侧节点指针 II.cpp" />
+              <option name="titleSlug" value="populating-next-right-pointers-in-each-node-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/editor/cn/[144]二叉树的前序遍历.cpp">
           <value>
             <LeetcodeEditor>
@@ -77,6 +99,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/editor/cn/[429]N 叉树的层序遍历.cpp" />
               <option name="titleSlug" value="n-ary-tree-level-order-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/editor/cn/[515]在每个树行中找最大值.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/editor/cn/doc/content/[515]在每个树行中找最大值.md" />
+              <option name="frontendQuestionId" value="leetcode.cn515" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/editor/cn/[515]在每个树行中找最大值.cpp" />
+              <option name="titleSlug" value="find-largest-value-in-each-tree-row" />
             </LeetcodeEditor>
           </value>
         </entry>
