@@ -14,4 +14,7 @@ add_executable(leecode
         editor/cn/[515]在每个树行中找最大值.cpp
         editor/cn/[116]填充每个节点的下一个右侧节点指针.cpp
         "editor/cn/[117]填充每个节点的下一个右侧节点指针 II.cpp"
+        editor/cn/[104]二叉树的最大深度.cpp
+        editor/cn/[104]二叉树的最大深度.cpp
+        editor/cn/[111]二叉树的最小深度.cpp
 )
